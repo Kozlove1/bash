@@ -8,7 +8,7 @@ else
 	
 area=$(echo "$length * $width" | bc)
 
-echo "Площадь треугольника с основанием $base и высотой $height равна **$area**."
+echo "Площадь треугольника с основанием $length и высотой $width равна **$area**."
 
 fi 
 

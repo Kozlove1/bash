@@ -1,12 +1,8 @@
 #!/bin/bash
 
-if [ "$#" -lt 1 ]; then
-echo "$0 provide one argument"
-fi
+read -p "Введите основную строку: " main_string
 
-main_string="$1"
-
-read -p "Provide substring:" substring
+read -p "Введите подстроку: " substring
 
 if [[ "$main_string" == *"$substring"* ]]; then
     echo "--------------------------------------------------"
