@@ -21,3 +21,4 @@ if [ $((number % 2)) -eq 0 ]; then
 else
     echo "Number $number is odd"
 fi
+
