@@ -9,5 +9,5 @@ printf $(( $1 * $2 ))
 
 for multiply in {1..9};
 do
-echo "$( multiply_func multiply num )"
+echo "$( multiply_func $multiply $num )"
 done

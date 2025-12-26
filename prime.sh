@@ -29,3 +29,18 @@ is_prime() {
     
     return 0  # простое
 }
+
+read -p "Provide a number: " num
+
+# Проверка, что это целое число
+if ! [[ "$num" =~ ^[0-9]+$ ]]; then
+    echo "Error: Please provide a positive integer"
+    exit 1
+fi
+
+# Вызов функции проверки на простое число
+if is_prime "$num"; then
+    echo "Number $num is prime"
+else
+    echo "Number $num is not prime"
+fi
